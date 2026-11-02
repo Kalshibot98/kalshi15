@@ -1,0 +1,8 @@
+__pycache__/
+*.log
+estado*.json
+version_actual.json
+decisiones*.csv
+STOP
+*.key
+.env
