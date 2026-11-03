@@ -10,6 +10,7 @@ Can Kalshi's 15-minute crypto markets ("will BTC/SOL/DOGE/XRP/NEAR/BNB finish ab
 |---|---|
 | Backtest (Dec 2025 to Oct 2026, ~111k markets) | ~1 point of edge per trade (favorite-longshot bias) |
 | Live, Oct 19-28 2026 (993 real trades, $11,937 traded) | **−$240 (−2% of volume)**. The latest versions were roughly flat |
+| Combos (BTC+ETH+SOL+XRP), Nov 2026 | Real quotes run 2-10¢ above the product of the legs, so the paper run overstated the edge. Combi V2 tests live, small: buys only if quote + fee < historical win rate. See `actualizaciones/` |
 | Next: public live test | 4 weeks, flat $5 per trade, stops if balance drops to $250. **Needs funding** |
 
 ## The strategy (V10 / PRUEBA)
@@ -29,7 +30,7 @@ python3 codigo/bot_cripto.py --moneda BTC            # simulation, no key needed
 
 ## Support the test
 
-**$500 in USDC on Base** funds a 4-week live test. **Not an investment, no returns promised.** "There's no edge" is a likely outcome, and it will be published too. If more than $500 arrives, trade size stays the same until there's a clear answer; the extra is reported and held for a second round.
+**Goal: $500 in USDC on Base, in total, from everyone who wants to chip in.** No one is expected to send $500: $5, $10 or $20 all help, and the running total is posted in each update. It funds the live tests (the 4-week single-coin test and the small live combo test, Combi V2). **Not an investment, no returns promised.** "There's no edge" is a likely outcome, and it will be published too. If more than $500 arrives, trade size stays the same until there's a clear answer; the extra is reported and held for a second round.
 
 USDC on **Base only**: `0x5BF51DB5BD9F9E2E58cF97850495807E47388731`
 
@@ -43,7 +44,7 @@ All incoming and outgoing transfers can be checked on-chain: [basescan.org/addre
 
 - **Historial (dic-2025 a oct-2026):** ~1 punto de ventaja por compra.
 - **En vivo (19 al 28/10/2026):** 993 compras y −$240 (−2% de lo operado). Las últimas versiones quedaron prácticamente en cero.
-- **Próximo paso:** 4 semanas en vivo con $5 fijos por compra. Si el saldo baja a $250, se frena. Necesitamos **$500 en USDC (red Base)** para hacerla.
+- **Próximo paso:** 4 semanas en vivo con $5 fijos por compra. Si el saldo baja a $250, se frena. La meta es juntar **$500 en USDC (red Base) entre todos**: aportes de $5, $10 o $20 ya ayudan, y el total se publica en cada novedad.
 
 **No es una inversión y no prometemos ganancias.** Todos los movimientos de la billetera se pueden verificar en la cadena.
 
